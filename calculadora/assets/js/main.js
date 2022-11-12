@@ -30,7 +30,7 @@ function criaCalculadora (){
 
     realizaConta(){
 
-      const reg = /[a-zA-Z]/g
+      const reg = /((?![0-9+-/*()])[\s\S])/gm;
       let conta = this.display.value.replace(reg, "");
       console.log(conta)
 
