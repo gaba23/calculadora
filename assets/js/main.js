@@ -42,6 +42,10 @@ function criaCalculadora (){
           return;
         }
         
+        if(conta === Infinity){
+          conta = 'Não é possível dividir por zero'
+        }
+        
         this.display.value = conta;
       } catch(evento){
         alert('Conta inválida');
