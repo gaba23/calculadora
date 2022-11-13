@@ -43,7 +43,7 @@ function criaCalculadora (){
         }
         
         if(conta === Infinity){
-          conta = 'Não é possível dividir por zero'
+          conta = 'Número indefinido'
         }
         
         this.display.value = conta;
